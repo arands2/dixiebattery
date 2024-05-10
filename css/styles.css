@@ -10947,12 +10947,14 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/Locally-Operated.jpg");
+  background-image: url("../assets/img/Dixie-battery-logo.JPG");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
-  margin-top: 25px;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  margin-top: 250px;
+  height: 100%;
+  width: 100%;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
