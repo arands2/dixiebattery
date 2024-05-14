@@ -10945,8 +10945,29 @@ p {
 
 .main-photo {
   height: 30vw;
-  margin-top: -100px;
 }
+/* Smaller devices (phones) */
+@media (max-width: 576px) {
+  .main-photo {
+      top: 0; /* Ensure the logo doesn't go under the navbar */
+      width: 80%; /* Optional: adjust width for smaller screens */
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .main-photo {
+      top: -50px; /* Slightly less negative top for tablets */
+  }
+}
+
+/* Larger devices */
+@media (min-width: 769px) {
+  .main-photo {
+      top: -100px; /* Original negative shift for larger screens */
+  }
+}
+
 
 /* Default size for desktops */
 .main-phone {
@@ -10964,7 +10985,7 @@ p {
 /* Extra small devices (phones) */
 @media (max-width: 576px) {
   .main-phone {
-      font-size: 45px; /* Even smaller size for phones */
+      font-size: 20px; /* Even smaller size for phones */
   }
 }
 
