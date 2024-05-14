@@ -10950,7 +10950,7 @@ p {
 @media (max-width: 576px) {
   .main-photo {
       top: 0; /* Ensure the logo doesn't go under the navbar */
-      height: 70vw;
+      height: 50vw;
   }
 }
 
