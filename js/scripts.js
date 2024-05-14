@@ -51,4 +51,9 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Toggle card function for mobile devices
+    window.toggleCard = function(card) {
+        card.classList.toggle('active');
+    };
+
 });

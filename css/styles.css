@@ -10985,7 +10985,7 @@ p {
 /* Extra small devices (phones) */
 @media (max-width: 576px) {
   .main-phone {
-      font-size: 40px; /* Even smaller size for phones */
+      font-size: 50px; /* Even smaller size for phones */
   }
 }
 
@@ -11364,3 +11364,92 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+
+
+
+
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-content, .card-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card .card-content {
+  background-color: transparent;
+  color: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover .card-content {
+  opacity: 0;
+}
+
+.card:hover .card-quote {
+  opacity: 1;
+}
+
+.card.active .card-content {
+  opacity: 0;
+}
+
+.card.active .card-quote {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-md-6, .col-xl-3 {
+      max-width: 100%;
+  }
+}
