@@ -1108,7 +1108,7 @@ progress {
   }
   .col-md-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 16%;
   }
   .col-md-4 {
     flex: 0 0 auto;
@@ -10950,7 +10950,7 @@ p {
 @media (max-width: 576px) {
   .main-photo {
       top: 0; /* Ensure the logo doesn't go under the navbar */
-      height: 50vw;
+      height: 70vw;
   }
 }
 
@@ -10985,7 +10985,7 @@ p {
 /* Extra small devices (phones) */
 @media (max-width: 576px) {
   .main-phone {
-      font-size: 50px; /* Even smaller size for phones */
+      font-size: 40px; /* Even smaller size for phones */
   }
 }
 
@@ -11301,7 +11301,7 @@ header.masthead .masthead-heading {
 }
 
 .img-brand {
-  height: 2.75rem;
+  height: 4rem;
 }
 
 section#contact {
