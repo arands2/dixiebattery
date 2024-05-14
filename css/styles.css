@@ -10950,7 +10950,6 @@ p {
 @media (max-width: 576px) {
   .main-photo {
       top: 0; /* Ensure the logo doesn't go under the navbar */
-      width: 80%; /* Optional: adjust width for smaller screens */
   }
 }
 
