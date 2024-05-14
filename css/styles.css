@@ -10950,6 +10950,7 @@ p {
 @media (max-width: 576px) {
   .main-photo {
       top: 0; /* Ensure the logo doesn't go under the navbar */
+      height: 30vw;
   }
 }
 
@@ -10971,7 +10972,7 @@ p {
 /* Default size for desktops */
 .main-phone {
   font-size: 100px; /* Adjust size as needed */
-  color: #333; /* Example color */
+  color: #89C0DE;
 }
 
 /* Smaller devices (tablets, large phones) */
